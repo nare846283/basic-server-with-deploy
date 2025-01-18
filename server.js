@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Default route
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.send(`server is running on port ${PORT}`);
 });
 
 // Start the server
