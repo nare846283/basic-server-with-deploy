@@ -1,12 +1,7 @@
 const express = require("express");
-const path = require("path");
-const dotenv = require("dotenv");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, "public")));
 
 // Default route
 app.get("/", (req, res) => {
