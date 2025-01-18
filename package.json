@@ -4,7 +4,7 @@
   "description": "A basic Node.js server with deployment configuration",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "dev": "nodemon server.js"
   },
   "engines": {
